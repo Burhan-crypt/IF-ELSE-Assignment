@@ -79,7 +79,7 @@
                 echo "You are not eligble to Vote <br>";
             } elseif ($age >= 18 && $age < 65) {
                 echo "You are an Adult <br>";
-                echo "You are Eligible to Vote in the USA <br>"; // Added the missing semicolon
+                echo "You are Eligible to Vote in the USA <br>"; 
             } else {
                 echo "You are a senior citizen <br>";
                 echo "You are eligible to vote in the USA.<br>";
