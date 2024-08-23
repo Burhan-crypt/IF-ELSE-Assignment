@@ -66,9 +66,10 @@
         </form>
         <div class="result">
     <?php
-    if (isset($_get["Name"];
+    if (isset($_get["Name"]) && isset($_get["Age"]) && isset($_get["Country"])) {
+        $name = $_get["Name"];
         $age = $_get["Age"];
-        $country = strtoupper($_GET["Country"]);
+        $country = strtoupper($_get["Country"]);
 
         if ($country !== "USA") {
             echo "Only USA is accepted as the country.<br>";
@@ -78,7 +79,7 @@
                 echo "You are not eligble to Vote <br>";
             } elseif ($age >= 18 && $age < 65) {
                 echo "You are an Adult <br>";
-                echo "You are Eligible to Vote in the USA <br>"; 
+                echo "You are Eligible to Vote in the USA <br>"; // Added the missing semicolon
             } else {
                 echo "You are a senior citizen <br>";
                 echo "You are eligible to vote in the USA.<br>";
@@ -86,6 +87,7 @@
         }
     }
     ?>
+</div>
 </div>
 
     </div>
