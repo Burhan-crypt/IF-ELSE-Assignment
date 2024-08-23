@@ -66,9 +66,8 @@
         </form>
         <div class="result">
     <?php
-    if (isset($_GET["Name"]) && isset($_GET["Age"]) && isset($_GET["Country"])) {
-        $name = $_GET["Name"];
-        $age = $_GET["Age"];
+    if (isset($_get["Name"];
+        $age = $_get["Age"];
         $country = strtoupper($_GET["Country"]);
 
         if ($country !== "USA") {
